@@ -114,11 +114,11 @@ repeat process until the cost is minimum / convergence
 Calculate the derivative for the MSE formula - 
 
 $$
-⁍
+J(w, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
 
 $$
-⁍
+\frac{\partial J}{\partial w} = -\frac{2}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)x_i
 $$
 
 $$
