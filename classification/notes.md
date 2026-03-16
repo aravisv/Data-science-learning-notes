@@ -266,3 +266,22 @@ Sources :
 https://scikit-learn.org/stable/modules/naive_bayes.html
 
 https://www.ibm.com/think/topics/naive-bayes
+
+**KNN**
+A K-Nearest Neighbors (KNN) classifier predicts the class of a data point by looking at the k closest training points and assigning the class that appears most frequently among them.
+It is a simplest lazy learning model, fails when the dataset is huge. 
+
+There are different distance metrics such as Euclidean, Minkowski, Manhattan, Hamming distance (boolean / string vectors).
+
+k - better be an odd number to avoid ties. More the outliers and noise in the data - higher the k is better.
+Very small k leads to overfitting, higher k leads to high bias. Choose the optimal value of k by cross validation method.
+
+Advantages - 
+Simple
+Only few hyperparameters such as k and distance metric
+Adapts easily when new training data is introduces
+
+Disadvantages - 
+Does not scale well - for large data, it requires more memory and time to compute
+Curse of dimensionality
+Prone to overfitting
